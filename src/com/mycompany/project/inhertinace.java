@@ -11,7 +11,7 @@ class animal{
         System.out.println(name + " is barking");
 
     }
-}nnn
+}
 
 class dog extends animal{
 }
