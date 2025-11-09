@@ -5,7 +5,6 @@ interface GrandParent {
 }
 
 interface Parent extends GrandParent {
-    // This override is more specific
     @Override
     default void message() {
         System.out.println("Parent message");
@@ -13,7 +12,6 @@ interface Parent extends GrandParent {
 }
 
 class Child implements GrandParent, Parent {
-    // No override is needed here!
 }
 
 public class Demo {
